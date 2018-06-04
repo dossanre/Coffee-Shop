@@ -1,0 +1,32 @@
+﻿body {
+    background-image: url('../images/WallpaperCoffee.png');
+}
+#Wrapper {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 50px 20px;
+}
+aside{
+    margin: auto;
+    width:400px;
+
+    padding:20px;
+    opacity:1.0;
+}
+#formLog {
+    color:white;
+    text-align:center;
+    border-radius: 10px 10px;
+    text-shadow: 2px 2px 8px grey;
+    box-shadow: 7px 7px 155px white;
+    padding: 10px;
+}
+.headLabel {
+    color:White;
+    font-size:40px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px grey;
+}
+
+

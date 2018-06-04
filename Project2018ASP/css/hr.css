@@ -1,0 +1,96 @@
+﻿body {
+    background-image: url('../images/WallpaperCoffee.png');
+}
+#Wrapper{
+    width:90%;
+    margin:0 auto;
+    font-family:Verdana, Calibri, Arial, sans-serif;
+    border:1px solid White;
+    box-shadow: 7px 7px 155px white;
+}
+header{
+    height:-5px;
+    text-align:center;
+    border-bottom:1px solid white;
+    padding:10px;
+}
+aside{
+    width:30%;
+    height:700px;
+    border-right:2px solid White;
+    float:left;
+}
+.empInfo {
+    margin:5px;
+    border:1px solid White;
+    height:300px;
+    box-shadow: 4px 4px 7px grey;
+    padding:10px;
+}
+.deptInfo {
+    margin:5px;
+    border:1px solid White;
+    height:300px;
+    box-shadow: 4px 4px 7px grey;
+    padding:10px;
+}
+.lblEmployeeInfo {
+    text-align:center;
+    color:white;
+    text-shadow: 4px 4px 7px white;
+    font-size:20px;
+    font-style: italic;
+    font-weight: bold;
+}
+.lblDate{
+    text-align:left;
+    color:white;
+    text-shadow: 4px 4px 7px white;
+    font-size:20px;
+    font-style: italic;
+    font-weight: bold;
+}
+#lblGender {
+   text-align:center;
+    color:white;
+    font-size:20px;
+}
+#lblDOB {
+   text-align:center;
+    color:white;
+    font-size:20px;
+}
+#lblDeptInfo 
+{
+    align-content:center;
+    color:white;
+    text-shadow: 4px 4px 7px white;
+    font-size:20px;
+    font-weight: bold;
+}
+.whiteborder {
+    border:3px solid white;
+    box-shadow: 4px 4px 7px grey;
+    padding:10px;
+}
+#ContentArea{
+    width:100%;
+    height:700px;
+    float:right;
+}
+.mg01 {
+    margin-left:10px;
+}
+footer{
+    clear:both;
+    height:40px;
+    padding:10px;
+    border-top:1px solid white;
+}
+.lblNameInfo {
+    margin:5px;
+    height:300px;
+    box-shadow: 4px 4px 7px grey;
+    padding:10px;
+    font-size:20px;
+}

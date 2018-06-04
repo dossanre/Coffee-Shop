@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Project2018ASP.RHPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>HR Page</title>
+    <link href="css/hr.css" rel="stylesheet" />
+    <script src="MyJavaScript/MyJS.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Wrapper">
+            <header>
+                <asp:Label ID="lblEmployeeName" Class="lblEmployeeInfo" runat="server" EnableTheming="True" Text="" Visible="True"></asp:Label>
+            </header>
+            <div class="container row col-sm-12">
+                <br />
+                <div class="col-sm-3">
+                    <br />
+                    <!-- Employee Informations -->
+                    <asp:Panel ID="panelHR" class="container border whiteborder rounded" runat="server">
+                        <asp:Label ID="lblEmployeeInfo" runat="server" Text="HR Information" class="lblEmployeeInfo" EnableTheming="True" Visible="True"></asp:Label>
+                        <br />
+                        <asp:Button ID="btnAddDepartment" runat="server" CssClass="btn btn-primary btn-block" OnClick="btnAddDepartment_Click" Text="Add / Edit Department" />
+                        <br />
+                        <asp:Button ID="btnAddJobTitle" runat="server" CssClass="btn btn-primary btn-block" OnClick="btnAddJobTitle_Click" Text="Add / Edit Job Title" />
+                        <br />
+                        <asp:Button ID="btnEmployeemaintenance" runat="server" CssClass="btn btn-primary btn-block" OnClick="btnAddEmployee_Click" Text="Add / Edit Employee" />
+                        <br />
+                    </asp:Panel>
+                    <br />
+                    <!-- Order Informations -->
+                    <asp:Panel ID="panelOrder" class="container border whiteborder rounded" runat="server">
+                        <asp:Label ID="lblOrderInfo" class="lblEmployeeInfo " runat="server" EnableTheming="True" Text="Order Information"></asp:Label>
+                        <br />
+                        <asp:Button ID="btnAllOrder" CssClass="btn btn-primary btn-block" runat="server" Text="Show All Order" OnClick="btnAllOrder_Click" />
+                        <br />
+                        <asp:Button ID="btnAddOrder" CssClass="btn btn-primary btn-block" runat="server" Text="New Order" OnClick="btnAddOrder_Click" />
+                        <br />
+                        <asp:Button ID="btnSerachOrder" CssClass="btn btn-primary btn-block" runat="server" Text="Order Search" OnClick="btnSerachOrder_Click"  />
+                        <br />
+                    </asp:Panel>
+                    <br />
+                    <!-- Products Informations -->
+                    <asp:Panel ID="panelProduct" class="container border whiteborder rounded" runat="server">
+                        <asp:Label ID="lblProducts" class="lblEmployeeInfo " runat="server" EnableTheming="True" Text="Product - Supply"></asp:Label>
+                        <br />
+                        <asp:Button ID="btnCategory" CssClass="btn btn-primary btn-block" runat="server" Text="Add / Edit Category" OnClick="btnCategory_Click" />
+                        <br />
+                        <asp:Button ID="btnProduct" CssClass="btn btn-primary btn-block" runat="server" Text="Add / Edit Product" OnClick="btnProduct_Click" />
+                        <br />
+                    </asp:Panel>
+                    <br />
+                    <asp:Button ID="btnLogout" CssClass="btn btn-warning btn-block" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+                    <br />
+                </div>
+                <!-- <div id="ContentArea" class="container"> -->
+                <div class="col-sm-9">
+                    <br />
+                    <div class="container border whiteborder rounded">
+                        <asp:ContentPlaceHolder ID="cphEmployeeInformation" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <footer>Footer</footer>
+        </div>
+    </form>
+</body>
+</html>
